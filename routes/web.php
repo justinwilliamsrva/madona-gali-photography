@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\ReviewController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,12 +26,23 @@ Route::get('about', function () {
 });
 
 Route::get('portrait', function () {
-    return view('portait');
+    return view('portrait');
 });
 
 Route::get('wedding', function () {
     return view('wedding');
 });
+
+Route::resource('details', DetailController::class);
+
+Route::get('contact', [ContactController::class, 'index']);
+Route::get('contact/create', [ContactController::class, 'create']);
+Route::post('contact', [ContactController::class, 'store']);
+
+Route::get('reviews', [ReviewController::class, 'index']);
+// Route::get('reviews/create', ContactController::class,'create');
+Route::post('reviews', [ReviewController::class, 'store']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
