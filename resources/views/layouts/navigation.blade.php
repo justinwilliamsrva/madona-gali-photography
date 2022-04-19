@@ -2,7 +2,7 @@
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center">
-            <div class="flex justify-space-between">
+            <div class="flex justify-between w-full sm:justify-center">
                 <a class="h-20 flex items-center" href="#">
                     <h1>Modana Gali Photography</h1>
                 </a>
