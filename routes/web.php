@@ -3,7 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ReviewController;
-
+use App\Models\Review;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home')->with('reviews', Review::get());
 });
 
 Route::get('about', function () {

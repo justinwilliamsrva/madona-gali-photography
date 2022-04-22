@@ -14,4 +14,5 @@
             </div>
         </div>
     </div>
+    <x-reviews.review-create :reviews='$reviews'/>
 </x-app-layout>

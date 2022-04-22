@@ -49,8 +49,8 @@
   </div>
   <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
     <p class="mb-2">
-        © {{ date('Y') }} Copyright: Modana Gali Photography
+        © {{ date('Y') }} Copyright Modana Gali Photography
     </p>
-    <p>Designed By: <a href="www.justinwdev.com" target="_blank">Justin Williams</a></p>
+    <p>Designed By <a href="https://www.justinwdev.com" target="_blank">Justin Williams</a></p>
   </div>
 </footer>
