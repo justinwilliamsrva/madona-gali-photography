@@ -13,7 +13,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
-
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <!-- Scripts -->
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
