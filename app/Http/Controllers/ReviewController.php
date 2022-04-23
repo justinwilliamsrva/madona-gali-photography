@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Review;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ReviewController extends Controller
 {
-    public function __construct(Request $request) {
-
+    public function __construct(Request $request)
+    {
     }
 
     /**
@@ -38,6 +40,18 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(["name" => 'required', "message" => ['required', 'min:7', 'max:500']]);
+
+        $review = new Review;
+        $review = Review::create([
+            'name' => $request->name,
+            'message' => $request->message,
+            'stars' => 5,
+        ]);
+        $review->save();
+
+        Session::flash('success', 'Thank you for the message');
+
+        return redirect()->back();
     }
 }
