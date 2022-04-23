@@ -41,7 +41,7 @@ Route::post('contact', [ContactController::class, 'store']);
 
 Route::get('reviews', [ReviewController::class, 'index'])->name('reviews');
 // Route::get('reviews/create', ContactController::class,'create');
-Route::post('reviews', [ReviewController::class, 'store']);
+Route::post('reviews', [ReviewController::class, 'store'])->name('reviews.store');
 
 
 Route::get('/dashboard', function () {
