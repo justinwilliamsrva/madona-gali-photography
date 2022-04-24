@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home')->with('reviews', Review::get());
+    return view('home')->with('reviews', Review::latest()->take(2)->get());
 })->name('home');
 
 Route::get('about', function () {

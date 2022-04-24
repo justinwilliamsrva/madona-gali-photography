@@ -8,7 +8,7 @@
             @endforeach
         </div>
         <div class="flex-grow border-2 flex flex-col sm:flex-row">
-            <div class="flex-1 hidden md:block"><img class="h-full w-96 mx-5" src="/images/madonna-review.jpeg" alt="madonna"></div>
+            <div class="flex-1 hidden md:block"><img class="h-auto w-96 mx-5" src="/images/madonna-review.jpeg" alt="madonna"></div>
             <form class="flex-grow my-auto mx-5" method="POST" action="{{ route('reviews.store') }}">
                 @csrf
 
@@ -17,7 +17,6 @@
                     <x-label for="name" :value="__('Full Name')" />
 
                     <x-input id="name" class="block mt-1 w-full " type="name" name="name" :value="old('name')" autofocus />
-                    @error('name')<p>{{message}}</p>@enderror
                 </div>
 
                 <!-- Password -->
@@ -25,7 +24,6 @@
                     <x-label for="message" :value="__('Message')" />
 
                     <textarea id="message" class="block mt-1 w-full h-32" type="textarea" name="message" :value="old('message')"></textarea>
-                    @error('message')<p>{{message}}</p>@enderror
                 </div>
             <!-- <input type="hidden" name="stars" value=5> -->
 
