@@ -1,8 +1,6 @@
 <x-guest-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
+        <x-banner-image url='/images/home-banner.jpeg' headingTitle='EVERY PHOTO TELLS A STORY' />
     </x-slot>
 
     <div class="py-12">

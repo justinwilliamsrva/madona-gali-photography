@@ -595,39 +595,6 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.container {
-  width: 100%;
-}
-@media (min-width: 640px) {
-
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-
-  .container {
-    max-width: 1536px;
-  }
-}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -765,6 +732,9 @@ select {
 .h-full {
   height: 100%;
 }
+.h-auto {
+  height: auto;
+}
 .h-32 {
   height: 8rem;
 }
@@ -773,9 +743,6 @@ select {
 }
 .h-16 {
   height: 4rem;
-}
-.h-auto {
-  height: auto;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -979,6 +946,22 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
 }
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+.bg-\[url\(\'\/images\/home-banner\.jpeg\'\)\] {
+  background-image: url('/images/home-banner.jpeg');
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center;
+}
 .fill-current {
   fill: currentColor;
 }
@@ -1070,12 +1053,12 @@ select {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-lg {
   font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.text-xl {
-  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 .font-medium {
@@ -1092,9 +1075,6 @@ select {
 }
 .leading-7 {
   line-height: 1.75rem;
-}
-.leading-tight {
-  line-height: 1.25;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -1474,6 +1454,11 @@ select {
 
   .md\:border-l {
     border-left-width: 1px;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 @media (min-width: 1024px) {
