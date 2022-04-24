@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\URL;
 
 if (App::environment() == "production") {
     URL::forceScheme('https');
-}
+
 
     Route::get('/', function () {
         return view('home')->with('reviews', Review::latest()->take(2)->get());
@@ -56,3 +56,4 @@ if (App::environment() == "production") {
     })->middleware(['auth'])->name('dashboard');
 
     require __DIR__.'/auth.php';
+}
