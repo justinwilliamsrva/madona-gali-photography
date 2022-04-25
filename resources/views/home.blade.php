@@ -7,7 +7,7 @@
         <div class="text-center">
             <h1>LOCATED IN</h1>
             <h2>Richmond ,VA</h2>
-            <h2>Available Worldwide</h2>ß
+            <h2>Available Worldwide</h2>
         </div>
         <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
