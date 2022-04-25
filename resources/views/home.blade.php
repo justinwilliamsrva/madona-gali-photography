@@ -21,4 +21,5 @@
         </div>
     </div>
     <x-reviews.review-create :reviews='$reviews' />
+
 </x-guest-layout>
