@@ -28,7 +28,7 @@
             <!-- <input type="hidden" name="stars" value=5> -->
 
                 <x-button class="mt-3">
-                    {{ __('Submit') }}
+                    {{ __('Submiter') }}
                 </x-button>
             </form>
             @if (session()->has('success'))
