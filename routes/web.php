@@ -20,8 +20,6 @@ use Illuminate\Support\Facades\URL;
 |
 */
 
-if (App::environment() == "production") {
-    URL::forceScheme('https');
     Route::get('/', function () {
         return view('home')->with('reviews', Review::latest()->take(2)->get());
     })->name('home');
@@ -54,38 +52,3 @@ if (App::environment() == "production") {
     })->middleware(['auth'])->name('dashboard');
 
     require __DIR__ . '/auth.php';
-} else {
-
-    Route::get('/', function () {
-        return view('home')->with('reviews', Review::latest()->take(2)->get());
-    })->name('home');
-
-    Route::get('about', function () {
-        return view('about');
-    })->name('about');
-
-    Route::get('portrait', function () {
-        return view('portrait');
-    })->name('portrait');
-
-    Route::get('wedding', function () {
-        return view('wedding');
-    })->name('wedding');
-
-    Route::resource('details', DetailController::class);
-
-    Route::get('contact', [ContactController::class, 'index']);
-    Route::get('contact/create', [ContactController::class, 'create'])->name('contact');
-    Route::post('contact', [ContactController::class, 'store']);
-
-    Route::get('reviews', [ReviewController::class, 'index'])->name('reviews');
-    // Route::get('reviews/create', ContactController::class,'create');
-    Route::post('reviews', [ReviewController::class, 'store'])->name('reviews.store');
-
-
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->middleware(['auth'])->name('dashboard');
-
-    require __DIR__ . '/auth.php';
-}
