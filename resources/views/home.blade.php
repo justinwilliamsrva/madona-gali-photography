@@ -11,12 +11,12 @@
         </div>
         <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
-                <x-home-product-cards link="#" image="/images/home-wedding.jpeg" title="Wedding" />
-                <x-home-product-cards link="#" image="/images/home-couples.jpeg" title="Couples" />
-                <x-home-product-cards link="#" image="/images/home-seniors.jpeg" title="Seniors" />
-                <x-home-product-cards link="#" image="/images/home-family.jpeg" title="Family" />
-                <x-home-product-cards link="#" image="/images/home-maternity.jpeg" title="Maternity" />
-                <x-home-product-cards link="#" image="/images/home-real-estate.jpeg" title="Real Estate" />
+                <x-home-product-cards link="wedding" image="/images/home-wedding.jpeg" title="Wedding" />
+                <x-home-product-cards link="couples" image="/images/home-couples.jpeg" title="Couples" />
+                <x-home-product-cards link="seniors" image="/images/home-seniors.jpeg" title="Seniors" />
+                <x-home-product-cards link="family" image="/images/home-family.jpeg" title="Family" />
+                <x-home-product-cards link="maternity" image="/images/home-maternity.jpeg" title="Maternity" />
+                <x-home-product-cards link="real-estate" image="/images/home-real-estate.jpeg" title="Real Estate" />
             </div>
         </div>
     </div>

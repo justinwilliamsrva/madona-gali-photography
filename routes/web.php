@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ReviewController;
 use App\Models\Review;
@@ -50,6 +51,10 @@ if (App::environment() == "production") {
     // Route::get('reviews/create', ContactController::class,'create');
     Route::post('reviews', [ReviewController::class, 'store'])->name('reviews.store');
 
+    Route::controller(GalleryController::class)->group(function () {
+        Route::get('/gallery/wedding', 'wedding');
+    });
+
 
     Route::get('/dashboard', function () {
         return view('dashboard');
@@ -85,6 +90,15 @@ else{
     // Route::get('reviews/create', ContactController::class,'create');
     Route::post('reviews', [ReviewController::class, 'store'])->name('reviews.store');
 
+    Route::controller(GalleryController::class)->group(function () {
+        Route::get('/gallery/wedding', 'wedding')->name('gallery-wedding');
+        Route::get('/gallery/wedding', 'wedding')->name('gallery-seniors');
+        Route::get('/gallery/wedding', 'wedding')->name('gallery-couples');
+        Route::get('/gallery/wedding', 'wedding')->name('gallery-maternity');
+        Route::get('/gallery/wedding', 'wedding')->name('gallery-real-estate');
+        Route::get('/gallery/wedding', 'wedding')->name('gallery-family');
+
+    });
 
     Route::get('/dashboard', function () {
         return view('dashboard');
