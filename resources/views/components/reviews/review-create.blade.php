@@ -42,7 +42,7 @@
                     {{ __('Submit') }}
                 </x-button>
                 @if (session()->has('success'))
-                    <p style="float:right" class="px-2 py-2 mt-3 rounded bg-blue-400">{{session('success')}}</p>
+                    <p style="float:right" class="px-4 py-2 mt-3 text-xs rounded bg-[#EAF3F6]">{{session('success')}}</p>
                 @endif
             </form>
         </div>
