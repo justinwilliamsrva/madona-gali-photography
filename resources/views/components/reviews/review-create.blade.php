@@ -1,5 +1,5 @@
 <div class="bg-[#F8F4EE] pt-8 ">
-<h1 class="text-black text-center text-2xl font-semibold uppercase md:text-3xl mb-8">Reviews</h1>
+<h1 class="text-black text-center text-2xl font-semibold uppercase md:text-3xl mb-8">Recent Reviews</h1>
     <div class="flex flex-col lg:flex-row">
         <div class="flex-1 m-5">
             @foreach($reviews as $review)
