@@ -46,11 +46,11 @@ class ReviewController extends Controller
         $review = Review::create([
             'name' => $request->name,
             'message' => $request->message,
-            'stars' => 5,
+            'stars' => $request->stars,
         ]);
         $review->save();
 
-        Session::flash('success', 'Thank you for the message');
+        Session::flash('success', 'Thank you for your rating');
 
         return redirect()->back();
     }

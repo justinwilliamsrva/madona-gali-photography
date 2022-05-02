@@ -26,7 +26,7 @@ if (App::environment() == "production") {
     URL::forceScheme('https');
 
     Route::get('/', function () {
-        return view('home')->with('reviews', Review::latest()->take(2)->get());
+        return view('home')->with('reviews', Review::latest()->take(3)->get());
     })->name('home');
 
     Route::get('about', function () {

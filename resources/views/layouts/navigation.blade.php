@@ -1,10 +1,10 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-[#F8F4EE] border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center">
             <div class="flex justify-between w-full sm:justify-center">
                 <a class="h-20 flex items-center" href="#">
-                    <h1>Modana Gali Photography</h1>
+                    <h1 class='text-2xl'>Modana Gali Photography</h1>
                 </a>
                 <!-- Hamburger -->
                 <div class="-mr-2 flex items-center sm:hidden">
