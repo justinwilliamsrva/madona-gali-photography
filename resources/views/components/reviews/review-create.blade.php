@@ -7,7 +7,7 @@
             @endforeach
         </div>
         <div class="flex-grow flex flex-col m-5 sm:flex-row sm:mr-5 ">
-            <div class="flex-1 hidden md:block"><img class="h-full w-96" src="/images/madonna-review.jpeg" alt="madonna"></div>
+            <div class="flex-1 hidden md:block"><img class="h-full w-96 mx-auto" src="/images/madonna-review.jpeg" alt="madonna"></div>
             <form class="flex-grow my-auto p-5 border-2 md:ml-5" method="POST" action="{{ route('reviews.store') }}">
                 @csrf
 
