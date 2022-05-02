@@ -1,14 +1,14 @@
 <div class="bg-[#F8F4EE] pt-8 sm:pt-12 ">
 <h1 class="text-black text-center text-2xl font-semibold uppercase md:text-3xl mb-6">Recent Reviews</h1>
-    <div class="flex flex-col lg:flex-row">
-        <div class="flex-1 m-5">
+    <div class="">
+        <div class="">
             @foreach($reviews as $review)
             <x-reviews.review-card :review='$review' />
             @endforeach
         </div>
-        <div class="flex-grow flex flex-col m-5 sm:flex-row sm:mr-5 ">
-            <div class="flex-1 hidden md:block"><img class="h-full w-96 mx-auto" src="/images/madonna-review.jpeg" alt="madonna"></div>
-            <form class="flex-grow my-auto p-5 border-2 md:ml-5" method="POST" action="{{ route('reviews.store') }}">
+        <div class="flex-col my-5 max-w-6xl mx-auto sm:flex-row md:flex">
+            <div class="flex-1 hidden md:block"><img class="w-96 ml-auto" src="/images/madonna-review.jpeg" alt="madonna"></div>
+            <form class="flex-grow p-5 border-2  md:mr-auto" method="POST" action="{{ route('reviews.store') }}">
                 @csrf
 
                 <!-- Name -->

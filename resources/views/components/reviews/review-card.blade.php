@@ -1,4 +1,4 @@
-<div class="text-sm text-gray-500 space-x-4">
+<div class="text-sm text-gray-500 max-w-6xl mx-auto px-4 sm:px-4 lg:max-w-7xl lg:px-8">
   <div class="flex-1 py-10 border-y border-gray-200">
     <h3 class="font-medium text-gray-900">{{ $review->name }}</h3>
     <p><time datetime="2021-07-12">{{ $review->created_at->format('M d Y') }}</time></p>
