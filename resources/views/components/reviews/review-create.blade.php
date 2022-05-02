@@ -15,12 +15,13 @@
                 <div>
                     <x-label for="name" :value="__('Full Name')" />
 
-                    <input id="name" class="block border-2 mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" :value="old('name')" />
-
+                    <input id="name" class="block border-2 border-black mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" :value="old('name')" />
+                </div>
                 <!-- Rating -->
+                <div class="mt-4">
                     <x-label for="stars" :value="__('Rating')" />
 
-                    <select name="stars" class="rounded focus:border-[#EAF3F6]">
+                    <select name="stars" class="rounded border-2 focus:border-[#EAF3F6]">
                         <option value='5' >5</option>
                         <option value='4' >4</option>
                         <option value='3' >3</option>
@@ -33,7 +34,7 @@
                 <div class="mt-4">
                     <x-label for="message" :value="__('Message')" />
 
-                    <textarea id="message" class="block mt-1 w-full h-32 rounded focus:border-[#EAF3F6]" type="textarea" name="message" :value="old('message')"></textarea>
+                    <textarea id="message" class="block mt-1 w-full h-32 rounded border-2 focus:border-[#EAF3F6]" type="textarea" name="message" :value="old('message')"></textarea>
                 </div>
 
 
