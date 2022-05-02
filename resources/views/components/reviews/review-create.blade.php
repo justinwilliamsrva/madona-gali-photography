@@ -1,5 +1,5 @@
-<div class="bg-[#F8F4EE] pt-8 ">
-<h1 class="text-black text-center text-2xl font-semibold uppercase md:text-3xl mb-8">Recent Reviews</h1>
+<div class="bg-[#F8F4EE] pt-8 sm:pt-12 ">
+<h1 class="text-black text-center text-2xl font-semibold uppercase md:text-3xl mb-6">Recent Reviews</h1>
     <div class="flex flex-col lg:flex-row">
         <div class="flex-1 m-5">
             @foreach($reviews as $review)
@@ -15,7 +15,7 @@
                 <div>
                     <x-label for="name" :value="__('Full Name')" />
 
-                    <input id="name" class="block border-1 mt-1 rounded w-full focus:border-[#EAF3F6] " type="name" name="name" :value="old('name')" />
+                    <input id="name" class="block border-2 mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" :value="old('name')" />
 
                 <!-- Rating -->
                     <x-label for="stars" :value="__('Rating')" />
