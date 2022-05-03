@@ -1035,6 +1035,12 @@ select {
 .bg-\[url\(\'\/images\/home-banner\.jpeg\'\)\] {
   background-image: url('/images/home-banner.jpeg');
 }
+.bg-\[url\(\'\/images\/about-banner\.jpeg\'\)\] {
+  background-image: url('/images/about-banner.jpeg');
+}
+.bg-\[url\(\'\/images\/about-banner\.jpg\'\)\] {
+  background-image: url('/images/about-banner.jpg');
+}
 .bg-cover {
   background-size: cover;
 }
