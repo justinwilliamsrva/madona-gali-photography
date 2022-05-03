@@ -4,7 +4,7 @@
     </x-slot>
 
     <div class="bg-[#EAF3F6]">
-        <div class="text-center py-8">
+        <div class="text-center py-8 sm:py-12">
             <h1 class="text-2xl">LOCATED IN</h1>
             <h2 class="text-2xl">Richmond ,VA</h2>
             <h2 class="text-xl italic">Available Worldwide</h2>
