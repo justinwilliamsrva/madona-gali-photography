@@ -24,10 +24,10 @@
                     {{ __('Meet Me') }}
                 </x-nav-link>
                 <x-nav-link :href="route('portrait')" :active="request()->routeIs('portrait')">
-                    {{ __('Portrait') }}
+                    {{ __('Portraits') }}
                 </x-nav-link>
                 <x-nav-link :href="route('wedding')" :active="request()->routeIs('wedding')">
-                    {{ __('Wedding') }}
+                    {{ __('Weddings') }}
                 </x-nav-link>
                 <x-nav-link :href="route('details.index')" :active="request()->routeIs('details.index')">
                     {{ __('Details') }}
@@ -50,10 +50,10 @@
                 {{ __('Meet Me') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('portrait')" :active="request()->routeIs('portrait')">
-                {{ __('Portrait') }}
+                {{ __('Portraits') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('wedding')" :active="request()->routeIs('wedding')">
-                {{ __('Wedding') }}
+                {{ __('Weddings') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('details.index')" :active="request()->routeIs('details.index')">
                 {{ __('Details') }}
