@@ -17,6 +17,8 @@
 
     <!-- Scripts -->
     <script src="/js/app.js" defer></script>
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </head>
 
 <body class="font-sans antialiased">
