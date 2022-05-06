@@ -21,7 +21,7 @@
                     {{ __('Home') }}
                 </x-nav-link>
                 <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
-                    {{ __('Meet Me') }}
+                    {{ __('About') }}
                 </x-nav-link>
                 <x-nav-link :href="route('portrait')" :active="request()->routeIs('portrait')">
                     {{ __('Portraits') }}
@@ -31,6 +31,9 @@
                 </x-nav-link>
                 <x-nav-link :href="route('details.index')" :active="request()->routeIs('details.index')">
                     {{ __('Details') }}
+                </x-nav-link>
+                <x-nav-link :href="route('reviews')" :active="request()->routeIs('reviews')">
+                    {{ __('Reviews') }}
                 </x-nav-link>
                 <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
                     {{ __('Contact') }}
@@ -47,7 +50,7 @@
                 {{ __('Home') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
-                {{ __('Meet Me') }}
+                {{ __('About') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('portrait')" :active="request()->routeIs('portrait')">
                 {{ __('Portraits') }}
@@ -58,6 +61,9 @@
             <x-responsive-nav-link :href="route('details.index')" :active="request()->routeIs('details.index')">
                 {{ __('Details') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('reviews')" :active="request()->routeIs('reviews')">
+                    {{ __('Reviews') }}
+                </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
                 {{ __('Contact') }}
             </x-responsive-nav-link>

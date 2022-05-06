@@ -7,7 +7,7 @@
       </div>
 
       <div class="px-5 py-2">
-        <a href="/about" class="text-base text-gray-700 hover:text-gray-900"> Meet Me </a>
+        <a href="/about" class="text-base text-gray-700 hover:text-gray-900"> About </a>
       </div>
 
       <div class="px-5 py-2">
@@ -21,7 +21,9 @@
       <div class="px-5 py-2">
         <a href="/details" class="text-base text-gray-700 hover:text-gray-900"> Details </a>
       </div>
-
+      <div class="px-5 py-2">
+        <a href="/review" class="text-base text-gray-700 hover:text-gray-900"> Reviews </a>
+      </div>
       <div class="px-5 py-2">
         <a href="/contact" class="text-base text-gray-700 hover:text-gray-900"> Contact </a>
       </div>

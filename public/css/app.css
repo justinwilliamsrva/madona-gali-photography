@@ -3735,6 +3735,9 @@ textarea.form-control.is-invalid {
 .float-left {
   float: left;
 }
+.m-auto {
+  margin: auto;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -3750,6 +3753,18 @@ textarea.form-control.is-invalid {
 .-my-2 {
   margin-top: -0.5rem;
   margin-bottom: -0.5rem;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -3868,6 +3883,9 @@ textarea.form-control.is-invalid {
 .h-\[32rem\] {
   height: 32rem;
 }
+.h-12 {
+  height: 3rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3903,6 +3921,9 @@ textarea.form-control.is-invalid {
 }
 .w-screen {
   width: 100vw;
+}
+.w-12 {
+  width: 3rem;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -4071,6 +4092,9 @@ textarea.form-control.is-invalid {
 .border-r {
   border-right-width: 1px;
 }
+.border-t-2 {
+  border-top-width: 2px;
+}
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -4171,6 +4195,9 @@ textarea.form-control.is-invalid {
 .p-0 {
   padding: 0px;
 }
+.p-4 {
+  padding: 1rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -4218,6 +4245,10 @@ textarea.form-control.is-invalid {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .pt-32 {
   padding-top: 8rem;
@@ -4290,6 +4321,9 @@ textarea.form-control.is-invalid {
 .font-extrabold {
   font-weight: 800;
 }
+.font-bold {
+  font-weight: 700;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -4304,6 +4338,9 @@ textarea.form-control.is-invalid {
 }
 .leading-8 {
   line-height: 2rem;
+}
+.leading-6 {
+  line-height: 1.5rem;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -4372,6 +4409,10 @@ textarea.form-control.is-invalid {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+.text-indigo-500 {
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -4813,6 +4854,10 @@ textarea.form-control.is-invalid {
     border-radius: 0.5rem;
   }
 
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -4938,6 +4983,10 @@ textarea.form-control.is-invalid {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:px-8 {
