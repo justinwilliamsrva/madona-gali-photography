@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMailer;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
 class ContactController extends Controller
@@ -55,6 +57,7 @@ class ContactController extends Controller
         ]);
         $contact->save();
         Session::flash('success', 'Thank you for your message. I will get back to your shortly');
+        Mail::to('justinwdev@gmail.com')->send(new ContactMailer($contact));
 
         return redirect()->back();
     }
