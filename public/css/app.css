@@ -4164,6 +4164,12 @@ textarea.form-control.is-invalid {
 .bg-\[url\(\'\/images\/home-banner\.jpeg\'\)\] {
   background-image: url('/images/home-banner.jpeg');
 }
+.bg-\[url\(\'\/images\/detail\.jpeg\'\)\] {
+  background-image: url('/images/detail.jpeg');
+}
+.bg-\[url\(\'\/images\/details\.jpeg\'\)\] {
+  background-image: url('/images/details.jpeg');
+}
 .bg-cover {
   background-size: cover;
 }
