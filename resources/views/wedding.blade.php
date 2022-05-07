@@ -1,6 +1,6 @@
 <x-guest-layout>
     <x-slot name="header">
-        <x-banner-text title='WEDDINGS' text='fine art photography for the classic romantic, laid back bride who is oh so in love with her fiancé, loves planning all of the little details, and believes that marrying her best friend is the most important aspect of the day' />
+        <x-banner-text title='WEDDINGS' text='Photography for the classic romantic, laid back bride who is oh so in love with her fiancé, loves planning all of the little details, and believes that marrying her best friend is the most important aspect of the day' />
     </x-slot>
 
     <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
