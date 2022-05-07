@@ -4170,6 +4170,18 @@ textarea.form-control.is-invalid {
 .bg-\[url\(\'\/images\/details\.jpeg\'\)\] {
   background-image: url('/images/details.jpeg');
 }
+.bg-\[url\(\'\/images\/reviews\.jpeg\'\)\] {
+  background-image: url('/images/reviews.jpeg');
+}
+.bg-\[url\(\'\/images\/Group\.jpg\'\)\] {
+  background-image: url('/images/Group.jpg');
+}
+.bg-\[url\(\'\/images\/Slice\.jpg\'\)\] {
+  background-image: url('/images/Slice.jpg');
+}
+.bg-\[url\(\'\/images\/about-banner\.jpeg\'\)\] {
+  background-image: url('/images/about-banner.jpeg');
+}
 .bg-cover {
   background-size: cover;
 }

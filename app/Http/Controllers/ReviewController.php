@@ -19,7 +19,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        //
+        $reviews = Review::all();
+        return view('reviews', ['reviews' => $reviews]);
     }
 
     /**
@@ -29,7 +30,7 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

@@ -1,6 +1,6 @@
 <x-guest-layout>
     <x-slot name="header">
-        <x-banner-image backgroundImage="bg-[url('/images/about-banner.jpg')]" headingTitle='MADONA GALI' />
+        <x-banner-image backgroundImage="bg-[url('/images/about-banner.jpeg')]" headingTitle='MADONA GALI' />
     </x-slot>
 
     <div class="bg-[#EAF3F6] overflow-hidden">
