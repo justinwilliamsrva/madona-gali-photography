@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ContactController extends Controller
 {
     public function __construct(Request $request)
     {
-        $this->middleware('auth')->except('create', 'store');
+        $this->middleware('auth')->only('index');
     }
 
     /**
@@ -28,7 +30,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        return view('contact');
     }
 
     /**
@@ -39,6 +41,21 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $request->validate(["name" => 'required', "message" => ['required', 'min:7', 'max:500']]);
+
+        $contact = new Contact;
+        $contact = Contact::create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'location' => $request->location,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ]);
+        $contact->save();
+        Session::flash('success', 'Thank you for your message. I will get back to your shortly');
+
+        return redirect()->back();
     }
 }
