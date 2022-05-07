@@ -83,7 +83,7 @@ else{
     Route::resource('details', DetailController::class);
 
     Route::get('contact/index', [ContactController::class, 'index']);
-    Route::get('contact', [ContactController::class, 'create'])->name('contact');
+    Route::get('contact/create', [ContactController::class, 'create'])->name('contact');
     Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
 
     Route::get('reviews', [ReviewController::class, 'index'])->name('reviews');

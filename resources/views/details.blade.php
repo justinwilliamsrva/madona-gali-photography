@@ -61,7 +61,7 @@
                 <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12" style="cursor: auto;">
                     <p class="mt-4 text-gray-500" style="text-decoration-style:solid">starting at</p>
                     <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
-                        <span>$175</span>
+                        <span>$175 </span>
                     </div>
                     <div class="mt-6">
                         <div class="rounded-md shadow">
@@ -134,7 +134,7 @@
                 <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12" style="cursor: auto;">
                     <p class="mt-4 text-gray-500" style="text-decoration-style:solid">starting at</p>
                     <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
-                        <span>$299</span>
+                        <span>$299 </span>
                     </div>
                     <div class="mt-6">
                         <div class="rounded-md shadow">
