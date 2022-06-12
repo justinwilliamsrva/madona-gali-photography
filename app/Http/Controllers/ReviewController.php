@@ -43,11 +43,19 @@ class ReviewController extends Controller
     {
         $request->validate(["name" => 'required', "message" => ['required', 'min:7', 'max:500']]);
 
+
+        if (strtolower($request->security) != 'black'){
+            Session::flash('error', 'Review not sent - Failed security question');
+
+            return redirect()->back();
+        }
+
         $review = new Review;
         $review = Review::create([
             'name' => $request->name,
             'message' => $request->message,
             'stars' => $request->stars,
+            'security' => $request->security,
         ]);
         $review->save();
 

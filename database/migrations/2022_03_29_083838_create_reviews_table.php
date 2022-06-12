@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('stars');
             $table->longText('message');
+            $table->string('security');
             $table->timestamps();
         });
     }

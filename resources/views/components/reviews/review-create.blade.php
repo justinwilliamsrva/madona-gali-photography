@@ -3,7 +3,7 @@
     <div class="">
         <div class="">
             @foreach($reviews as $review)
-            <x-reviews.review-card :review='$review' />
+                <x-reviews.review-card :review='$review' />
             @endforeach
         </div>
         <div class=" p-5 max-w-6xl mx-auto sm:flex-row md:flex flex-col justify-between">
@@ -15,13 +15,13 @@
                 <div>
                     <x-label for="name" :value="__('Full Name')" />
 
-                    <input id="name" class="block border-2 border-black mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" :value="old('name')" />
+                    <input id="name" class="block border-2 border-black mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" :value="old('name')" required/>
                 </div>
                 <!-- Rating -->
                 <div class="mt-4">
                     <x-label for="stars" :value="__('Rating')" />
 
-                    <select name="stars" class="rounded border-2 focus:border-[#EAF3F6]">
+                    <select name="stars" class="rounded border-2 focus:border-[#EAF3F6]" required>
                         <option value='5' >5</option>
                         <option value='4' >4</option>
                         <option value='3' >3</option>
@@ -34,7 +34,15 @@
                 <div class="mt-4">
                     <x-label for="message" :value="__('Message')" />
 
-                    <textarea id="message" class="block mt-1 w-full h-32 rounded border-2 focus:border-[#EAF3F6]" type="textarea" name="message" :value="old('message')"></textarea>
+                    <textarea id="message" class="block mt-1 w-full h-32 rounded border-2 focus:border-[#EAF3F6]" type="textarea" name="message" :value="old('message')" required></textarea>
+                </div>
+
+                <div class="mt-4">
+                    <x-label for="security" :value="__('Security Question: Pandas are white and __________ ?')" />
+                    <x-input id="security" class="block mt-1 w-full"
+                                type="security"
+                                name="security"
+                                required/>
                 </div>
 
 
@@ -43,6 +51,9 @@
                 </x-button>
                 @if (session()->has('success'))
                     <p style="float:right" class="px-4 py-2 mt-3 text-xs rounded bg-[#EAF3F6]">{{session('success')}}</p>
+                @endif
+                @if (session()->has('error'))
+                    <p style="float:right" class="px-4 py-2 mt-3 text-xs rounded bg-red-300">{{session('error')}}</p>
                 @endif
             </form>
         </div>
