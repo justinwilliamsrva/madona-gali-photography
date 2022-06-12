@@ -67,7 +67,7 @@ if (false) {
 else{
 
     Route::get('/', function () {
-        return view('home')->with('reviews', Review::latest()->take(2)->get());
+        return view('home')->with('reviews', Review::where('stars', 5)->latest()->take(3)->get());
     })->name('home');
 
     Route::get('about', function () {
