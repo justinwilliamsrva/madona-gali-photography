@@ -11,6 +11,9 @@
                 @if (session()->has('success'))
                 <p class="text-lg mt-5 rounded">{{session('success')}}</p>
                 @endif
+                @if (session()->has('error'))
+                <p class="text-lg mt-5 text-red-300 underline rounded">{{session('error')}}</p>
+                @endif
             </div>
             <div class="mt-5 md:mt-0 md:col-span-2">
                 <form action="{{ route('contact.store') }}" method="POST">
@@ -43,13 +46,17 @@
                         </div>
 
                         <div class="col-span-6">
-                            <label for="street-address" class="block text-sm font-medium text-gray-700">Subject</label>
-                            <input required type="text" name="subject" id="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                            <input required type="text" name="subject" id="subject" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
 
                         <div class="col-span-6">
-                            <label for="street-address" class="block text-sm font-medium text-gray-700">Message</label>
-                            <textarea required type="text" rows="6" name="message" id="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea required type="text" rows="6" name="message" id="message" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+                        </div>
+                        <div class="col-span-6">
+                            <label for="security" class="block text-sm font-medium text-gray-700">Security Question: Roses are red, violets are __________ ?</label>
+                            <input required type="text" name="security" id="security" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
                     </div>
                     <div class="pl-4 py-3 text-right sm:pl-6">

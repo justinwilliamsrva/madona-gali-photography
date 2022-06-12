@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('location');
             $table->string('subject');
             $table->longText('message');
+            $table->string('security');
             $table->timestamps();
         });
     }

@@ -45,6 +45,12 @@ class ContactController extends Controller
     {
         // $request->validate(["name" => 'required', "message" => ['required', 'min:7', 'max:500']]);
 
+        if (strtolower($request->security) != 'blue'){
+            Session::flash('error', 'Message not sent - Failed security question');
+
+            return redirect()->back();
+        }
+
         $contact = new Contact;
         $contact = Contact::create([
             'first_name' => $request->first_name,
@@ -54,6 +60,7 @@ class ContactController extends Controller
             'location' => $request->location,
             'subject' => $request->subject,
             'message' => $request->message,
+            'security' => $request->security,
         ]);
         $contact->save();
         Session::flash('success', 'Thank you for your message. I will get back to your shortly');
