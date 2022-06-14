@@ -64,7 +64,7 @@ class ContactController extends Controller
         ]);
         $contact->save();
         Session::flash('success', 'Thank you for your message. I will get back to your shortly');
-        Mail::to('madonagali@gmail.com')->send(new ContactMailer($contact));
+        Mail::to('madonagaliphotography@gmail.com')->send(new ContactMailer($contact));
 
         return redirect()->back();
     }
