@@ -1,6 +1,6 @@
 <x-guest-layout>
     <x-slot name="header">
-        <x-banner-image backgroundImage="bg-[url('/images/about-banner.jpeg')]" headingTitle='Contact Me' />
+        <x-banner-image backgroundImage="bg-[url('https://live.staticflickr.com/65535/52162188140_e6c9f5ff44_b.jpg')]" headingTitle='Contact Me' />
     </x-slot>
 
     <div class="bg-[#EAF3F6]">
