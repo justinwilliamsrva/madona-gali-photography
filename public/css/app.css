@@ -4171,20 +4171,11 @@ textarea.form-control.is-invalid {
 .bg-\[url\(\'https\:\/\/live\.staticflickr\.com\/65535\/52162188140_e6c9f5ff44_b\.jpg\'\)\] {
   background-image: url('https://live.staticflickr.com/65535/52162188140_e6c9f5ff44_b.jpg');
 }
-.bg-\[url\(\'\/images\/about-banner\.jpeg\'\)\] {
-  background-image: url('/images/about-banner.jpeg');
-}
-.bg-\[url\(\'\/images\/details\.jpeg\'\)\] {
-  background-image: url('/images/details.jpeg');
+.bg-\[url\(\'https\:\/\/live\.staticflickr\.com\/65535\/52160678262_9ee6f2c8a0_o\.jpg\'\)\] {
+  background-image: url('https://live.staticflickr.com/65535/52160678262_9ee6f2c8a0_o.jpg');
 }
 .bg-\[url\(\'https\:\/\/live\.staticflickr\.com\/65535\/52162186580_6f3ee285df_o\.jpg\'\)\] {
   background-image: url('https://live.staticflickr.com/65535/52162186580_6f3ee285df_o.jpg');
-}
-.bg-\[url\(\'\/images\/Slice\.jpg\'\)\] {
-  background-image: url('/images/Slice.jpg');
-}
-.bg-\[url\(\'https\:\/\/live\.staticflickr\.com\/65535\/52160678262_9ee6f2c8a0_o\.jpg\'\)\] {
-  background-image: url('https://live.staticflickr.com/65535/52160678262_9ee6f2c8a0_o.jpg');
 }
 .bg-\[url\(\'https\:\/\/live\.staticflickr\.com\/65535\/52161937989_1683059090_b\.jpg\'\)\] {
   background-image: url('https://live.staticflickr.com/65535/52161937989_1683059090_b.jpg');
@@ -4662,6 +4653,10 @@ textarea.form-control.is-invalid {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;

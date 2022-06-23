@@ -3,48 +3,39 @@
         <x-banner-text title='PORTRAITS' text='Along with weddings, I love to photograph portrait sessions throughout the year. I enjoy photographing all of the milestones in life along the way! From anniversary, maternity, newborn, family, and senior, I love getting to know you and your family, to watch them grow, and to capture who you are and what you felt like at that moment in life!' />
     </x-slot>
 
-    <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
-        <div class=" carousel-inner relative w-full overflow-hidden">
-            <div class="carousel-item active relative float-left w-full">
-                <img src="/images/portrait/portrait-1.jpeg" class="block mx-auto h-[32rem]" alt="Wild Landscape" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-2.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-3.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-4.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-5.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-6.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-7.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-8.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-9.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-            <div class="carousel-item relative float-left w-full">
-                <img src="/images/portrait/portrait-91.jpeg" class="block mx-auto h-[32rem]" alt="" />
-            </div>
-        </div>
-        <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527161_7b37355f37_b.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063760134_4ab5497586_b.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52062487607_f2b3741e13_b.jpg" alt="">
+			</li>
+            <li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063545278_6b019406c6_b.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527146_e762285f48_b.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52064016525_e4ce870ef2_b.jpg" alt="">
+			</li>
+            <li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063760119_c29b24ee24_b.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527121_5055819268_b.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52122240760_bc3ecba1ea_o.jpg" alt="">
+			</li>
+		</ul>
+  </div>
+</section>
 
 
     <div class="min-h-[32rem] bg-[#EAF3F6]">
@@ -124,6 +115,8 @@
             </div>
         </div>
     </div>
+    
+
 
 
 
