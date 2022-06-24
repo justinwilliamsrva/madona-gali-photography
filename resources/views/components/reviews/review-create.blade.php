@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="mt-4">
-                    <x-label for="security" :value="__('Security Question: Pandas are white and __________ ?')" />
+                    <x-label for="security" :value="__('Security Question: Pandas are white and ____?')" />
                     <x-input id="security" class="block mt-1 w-full"
                                 type="security"
                                 name="security"
