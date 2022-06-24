@@ -1294,11 +1294,6 @@ textarea.form-control.is-invalid {
 .carousel.pointer-event {
   touch-action: pan-y;
 }
-.carousel-inner::after {
-  display: block;
-  clear: both;
-  content: "";
-}
 .carousel-item {
   display: none;
   margin-right: -100%;
@@ -1354,52 +1349,6 @@ textarea.form-control.is-invalid {
   opacity: 0;
   transition: opacity 0s 0.6s;
 }
-.carousel-control-prev {
-  z-index: 1;
-  width: 15%;
-  color: #fff;
-  background: none;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
-}
-.carousel-control-next {
-  z-index: 1;
-  width: 15%;
-  color: #fff;
-  background: none;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
-}
-.carousel-control-prev:hover {
-  color: #fff;
-  opacity: 0.9;
-}
-.carousel-control-prev:focus {
-  color: #fff;
-  opacity: 0.9;
-}
-.carousel-control-next:hover {
-  color: #fff;
-  opacity: 0.9;
-}
-.carousel-control-next:focus {
-  color: #fff;
-  opacity: 0.9;
-}
-.carousel-control-prev-icon {
-  width: 2rem;
-  height: 2rem;
-  background-position: 50%;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-}
-.carousel-control-next-icon {
-  width: 2rem;
-  height: 2rem;
-  background-position: 50%;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
 .carousel-indicators {
   z-index: 2;
   margin-right: 15%;
@@ -1427,12 +1376,6 @@ textarea.form-control.is-invalid {
 }
 .carousel-indicators .active {
   opacity: 1;
-}
-.carousel-dark .carousel-control-prev-icon {
-  filter: invert(1) grayscale(100);
-}
-.carousel-dark .carousel-control-next-icon {
-  filter: invert(1) grayscale(100);
 }
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #000;
@@ -1463,17 +1406,6 @@ textarea.form-control.is-invalid {
   position: sticky;
   top: 0;
   z-index: 1020;
-}
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
 }
 .vr {
   display: inline-block;
@@ -3720,11 +3652,11 @@ textarea.form-control.is-invalid {
 .bottom-0 {
   bottom: 0px;
 }
-.left-0 {
-  left: 0px;
-}
 .left-3\/4 {
   left: 75%;
+}
+.left-0 {
+  left: 0px;
 }
 .z-0 {
   z-index: 0;
@@ -3734,9 +3666,6 @@ textarea.form-control.is-invalid {
 }
 .col-span-6 {
   grid-column: span 6 / span 6;
-}
-.float-left {
-  float: left;
 }
 .mx-auto {
   margin-left: auto;
@@ -3826,9 +3755,6 @@ textarea.form-control.is-invalid {
 }
 .block {
   display: block;
-}
-.inline-block {
-  display: inline-block;
 }
 .flex {
   display: flex;
@@ -4073,9 +3999,6 @@ textarea.form-control.is-invalid {
 .border-2 {
   border-width: 2px;
 }
-.border-0 {
-  border-width: 0px;
-}
 .border-y {
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -4186,9 +4109,6 @@ textarea.form-control.is-invalid {
 .bg-center {
   background-position: center;
 }
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
 .fill-current {
   fill: currentColor;
 }
@@ -4214,9 +4134,6 @@ textarea.form-control.is-invalid {
 }
 .p-6 {
   padding: 1.5rem;
-}
-.p-0 {
-  padding: 0px;
 }
 .px-4 {
   padding-left: 1rem;
@@ -4530,130 +4447,6 @@ textarea.form-control.is-invalid {
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
-#photos {
-    /* Prevent vertical gaps */
-    line-height: 0;
-
-    -webkit-column-count: 5;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    5;
-    -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;
-  }
-#photos img {
-    /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
-  }
-@media (max-width: 1200px) {
-    #photos {
-    -moz-column-count:    4;
-    column-count:         4;
-    }
-  }
-@media (max-width: 1000px) {
-    #photos {
-    -moz-column-count:    3;
-    column-count:         3;
-    }
-  }
-@media (max-width: 800px) {
-    #photos {
-    -moz-column-count:    2;
-    column-count:         2;
-    }
-  }
-@media (max-width: 400px) {
-    #photos {
-    -moz-column-count:    1;
-    column-count:         1;
-    }
-  }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 .splide__slide img {
   width: 100%;
   height: auto;
@@ -4697,14 +4490,6 @@ textarea.form-control.is-invalid {
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-.hover\:no-underline:hover {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-.hover\:outline-none:hover {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 .focus\:z-10:focus {
   z-index: 10;
@@ -4764,10 +4549,6 @@ textarea.form-control.is-invalid {
 .focus\:text-gray-700:focus {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-.focus\:no-underline:focus {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;

@@ -4,38 +4,38 @@
     </x-slot>
 
     <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-  <div class="splide__track">
-		<ul class="splide__list">
-			<li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527161_7b37355f37_b.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063760134_4ab5497586_b.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52062487607_f2b3741e13_b.jpg" alt="">
-			</li>
-            <li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063545278_6b019406c6_b.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527146_e762285f48_b.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52064016525_e4ce870ef2_b.jpg" alt="">
-			</li>
-            <li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063760119_c29b24ee24_b.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527121_5055819268_b.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img class="h-[32rem]" src="https://live.staticflickr.com/65535/52122240760_bc3ecba1ea_o.jpg" alt="">
-			</li>
-		</ul>
-  </div>
-</section>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527161_7b37355f37_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063760134_4ab5497586_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52062487607_f2b3741e13_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063545278_6b019406c6_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527146_e762285f48_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52064016525_e4ce870ef2_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063760119_c29b24ee24_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52063527121_5055819268_b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="h-[32rem]" src="https://live.staticflickr.com/65535/52122240760_bc3ecba1ea_o.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
     <div class="min-h-[32rem] bg-[#EAF3F6]">
@@ -115,7 +115,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
 

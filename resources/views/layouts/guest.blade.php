@@ -22,7 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
 
-   
+
 </head>
 
 <body class="font-sans antialiased">
@@ -42,12 +42,30 @@
     </div>
 </body>
 <script>
-  var splide = new Splide( '#image-carousel',{
-    perPage: 3,
-    rewind : true,
-  
-  } )
-  
-  splide.mount();
+    if (window.innerWidth > 1280) {
+        var splide = new Splide('#image-carousel', {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+
+        })
+    } else if (window.innerWidth > 768) {
+        var splide = new Splide('#image-carousel', {
+            type: 'loop',
+            perPage: 2,
+            perMove: 1,
+
+        })
+    } else {
+        var splide = new Splide('#image-carousel', {
+            type: 'loop',
+            perPage: 1,
+            perMove: 1,
+
+        })
+    }
+
+    splide.mount();
 </script>
+
 </html>
