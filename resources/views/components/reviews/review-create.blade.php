@@ -15,7 +15,7 @@
                 <div>
                     <x-label for="name" :value="__('Full Name')" />
 
-                    <input id="name" class="block border-2 border-black mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" :value="old('name')" required/>
+                    <input id="name" class="block border-2 border-black mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" required/>
                 </div>
                 <!-- Rating -->
                 <div class="mt-4">
@@ -34,7 +34,7 @@
                 <div class="mt-4">
                     <x-label for="message" :value="__('Message')" />
 
-                    <textarea id="message" class="block mt-1 w-full h-32 rounded border-2 focus:border-[#EAF3F6]" type="textarea" name="message" :value="old('message')" required></textarea>
+                    <textarea id="message" class="block mt-1 w-full h-32 rounded border-2 focus:border-[#EAF3F6]" type="textarea" name="message" value="old('message')" required></textarea>
                 </div>
 
                 <div class="mt-4">
