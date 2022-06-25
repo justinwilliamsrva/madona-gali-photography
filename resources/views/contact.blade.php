@@ -55,7 +55,7 @@
                             <textarea required type="text" rows="6" name="message" id="message" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
                         </div>
                         <div class="col-span-6">
-                            <label for="security" class="block text-sm font-medium text-gray-700">Security Question:<br class="sm:hidden"/> Roses are red, violets are _____?</label>
+                            <label for="security" class="block text-sm font-medium text-gray-700">Security Question:<br class="sm:hidden"/> Roses are red, violets are ____?</label>
                             <input required type="text" name="security" id="security" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
                     </div>

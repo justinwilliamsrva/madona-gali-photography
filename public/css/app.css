@@ -3658,9 +3658,6 @@ textarea.form-control.is-invalid {
 .left-0 {
   left: 0px;
 }
-.top-5 {
-  top: 1.25rem;
-}
 .z-0 {
   z-index: 0;
 }
@@ -3760,9 +3757,6 @@ textarea.form-control.is-invalid {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
-}
 .block {
   display: block;
 }
@@ -3796,8 +3790,8 @@ textarea.form-control.is-invalid {
 .h-10 {
   height: 2.5rem;
 }
-.h-\[32rem\] {
-  height: 32rem;
+.h-80 {
+  height: 20rem;
 }
 .h-7 {
   height: 1.75rem;
@@ -3811,14 +3805,8 @@ textarea.form-control.is-invalid {
 .h-16 {
   height: 4rem;
 }
-.h-96 {
-  height: 24rem;
-}
-.h-3\/4 {
-  height: 75%;
-}
-.h-80 {
-  height: 20rem;
+.h-\[32rem\] {
+  height: 32rem;
 }
 .min-h-\[32rem\] {
   min-height: 32rem;
@@ -3929,9 +3917,6 @@ textarea.form-control.is-invalid {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 .flex-row {
   flex-direction: row;
 }
@@ -3994,11 +3979,6 @@ textarea.form-control.is-invalid {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
   overflow: hidden;
@@ -4143,21 +4123,13 @@ textarea.form-control.is-invalid {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 .object-center {
   -o-object-position: center;
      object-position: center;
-}
-.object-top {
-  -o-object-position: top;
-     object-position: top;
 }
 .p-8 {
   padding: 2rem;
@@ -4480,11 +4452,11 @@ textarea.form-control.is-invalid {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 .splide__slide img {
   width: 100%;
@@ -4692,10 +4664,6 @@ textarea.form-control.is-invalid {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:h-96 {
-    height: 24rem;
   }
 
   .sm\:h-20 {
@@ -4958,14 +4926,6 @@ textarea.form-control.is-invalid {
   }
 }
 @media (min-width: 1280px) {
-
-  .xl\:invisible {
-    visibility: hidden;
-  }
-
-  .xl\:block {
-    display: block;
-  }
 
   .xl\:gap-x-8 {
     -moz-column-gap: 2rem;
