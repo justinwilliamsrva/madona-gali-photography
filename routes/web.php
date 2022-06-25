@@ -94,11 +94,11 @@ else{
 
     Route::controller(GalleryController::class)->group(function () {
         Route::get('/gallery/wedding', 'wedding')->name('gallery-wedding');
-        Route::get('/gallery/wedding', 'wedding')->name('gallery-seniors');
-        Route::get('/gallery/wedding', 'wedding')->name('gallery-couples');
-        Route::get('/gallery/wedding', 'wedding')->name('gallery-maternity');
-        Route::get('/gallery/wedding', 'wedding')->name('gallery-real-estate');
-        Route::get('/gallery/wedding', 'wedding')->name('gallery-family');
+        Route::get('/gallery/seniors', 'seniors')->name('gallery-seniors');
+        Route::get('/gallery/couples', 'couples')->name('gallery-couples');
+        Route::get('/gallery/maternity', 'maternity')->name('gallery-maternity');
+        Route::get('/gallery/real-estate', 'real_estate')->name('gallery-real-estate');
+        Route::get('/gallery/family', 'family')->name('gallery-family');
 
     });
 

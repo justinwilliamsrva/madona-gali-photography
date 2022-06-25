@@ -1,4 +1,4 @@
-<a href="#" class="group h-[32rem] sm:h-96 {{ $image == 'hide' ? 'hidden xl:invisible xl:block' : 'visible'}}">
+<a href="{{ route($link)}} " class="group h-[32rem] sm:h-96">
   <div class="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
     <img src="{{ $image }}" alt="" class=" w-full h-full object-center object-cover group-hover:opacity-75">
   </div>
