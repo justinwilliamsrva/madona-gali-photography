@@ -242,4 +242,32 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <script>
+
+if (window.innerWidth > 1280) {
+    var splide = new Splide('#image-carousel', {
+        type: 'loop',
+        perPage: 3,
+        perMove: 1,
+
+    })
+} else if (window.innerWidth > 768) {
+    var splide = new Splide('#image-carousel', {
+        type: 'loop',
+        perPage: 2,
+        perMove: 1,
+
+    })
+} else {
+    var splide = new Splide('#image-carousel', {
+        type: 'loop',
+        perPage: 1,
+        perMove: 1,
+
+    })
+}
+
+splide.mount();
+</script>
 </x-guest-layout>

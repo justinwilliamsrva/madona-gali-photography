@@ -15,12 +15,14 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"></link>
+
+
 
     <!-- Scripts -->
-    <script src="/js/app.js" defer></script>
-    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 
 
 </head>
@@ -42,30 +44,16 @@
     </div>
 </body>
 <script>
-    if (window.innerWidth > 1280) {
-        var splide = new Splide('#image-carousel', {
-            type: 'loop',
-            perPage: 3,
-            perMove: 1,
 
-        })
-    } else if (window.innerWidth > 768) {
-        var splide = new Splide('#image-carousel', {
-            type: 'loop',
-            perPage: 2,
-            perMove: 1,
+    $('#gallery').justifiedGallery({
+        rowHeight : 200,
+    lastRow : 'nojustify',
+    margins : 3
 
-        })
-    } else {
-        var splide = new Splide('#image-carousel', {
-            type: 'loop',
-            perPage: 1,
-            perMove: 1,
+    });
 
-        })
-    }
 
-    splide.mount();
+
 </script>
 
 </html>
