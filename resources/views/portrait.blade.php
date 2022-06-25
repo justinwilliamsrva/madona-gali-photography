@@ -39,17 +39,17 @@
 
 
     <div class="min-h-[32rem] bg-[#EAF3F6]">
-        <div class="relative p-4 mx-auto lg:py-32 max-w-5xl sm:px-6 lg:px-8" style="cursor: auto;">
-            <div class="max-w-lg mx-auto overflow-hidden shadow-lg lg:max-w-none lg:flex">
-                <div class="flex-1 px-6 py-8 bg-white lg:p-12" style="cursor: auto;">
+        <div class="relative p-4 mx-auto md:py-32 max-w-5xl sm:px-6 md:px-8" style="cursor: auto;">
+            <div class="max-w-lg mx-auto overflow-hidden shadow-lg md:max-w-none md:flex">
+                <div class="flex-1 px-6 py-8 bg-white md:p-12" style="cursor: auto;">
                     <h3 class="text-2xl font-extrabold text-gray-900 sm:text-3xl" style="cursor: auto;">Portraits</h3>
                     <div class="mt-8">
                         <div class="flex items-center">
                             <h4 class="flex-shrink-0 pr-4 text-sm font-semibold tracking-wide uppercase bg-white">What's included</h4>
                             <div class="flex-1 border-t-2 border-gray-200"></div>
                         </div>
-                        <ul class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
-                            <li class="flex items-start lg:col-span-1">
+                        <ul class="mt-8 space-y-5 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-5">
+                            <li class="flex items-start md:col-span-1">
                                 <div class="flex-shrink-0">
                                     <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -57,7 +57,7 @@
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700">One Location</p>
                             </li>
-                            <li class="flex items-start lg:col-span-1">
+                            <li class="flex items-start md:col-span-1">
                                 <div class="flex-shrink-0">
                                     <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -65,7 +65,7 @@
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700">1 Hour of Coverage</p>
                             </li>
-                            <li class="flex items-start lg:col-span-1">
+                            <li class="flex items-start md:col-span-1">
                                 <div class="flex-shrink-0">
                                     <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -73,7 +73,7 @@
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700">Up To 2 Outfits</p>
                             </li>
-                            <li class="flex items-start lg:col-span-1">
+                            <li class="flex items-start md:col-span-1">
                                 <div class="flex-shrink-0">
                                     <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -81,7 +81,7 @@
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700">30 Digital Images</p>
                             </li>
-                            <li class="flex items-start lg:col-span-1">
+                            <li class="flex items-start md:col-span-1">
                                 <div class="flex-shrink-0">
                                     <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -89,7 +89,7 @@
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700">Online Gallery</p>
                             </li>
-                            <li class="flex items-start lg:col-span-1">
+                            <li class="flex items-start md:col-span-1">
                                 <div class="flex-shrink-0">
                                     <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12" style="cursor: auto;">
+                <div class="px-6 py-8 text-center bg-gray-50 md:flex-shrink-0 md:flex md:flex-col md:justify-center md:p-12" style="cursor: auto;">
                     <p class="mt-4 text-gray-500" style="text-decoration-style:solid">starting at</p>
                     <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
                         <span>$299</span>
