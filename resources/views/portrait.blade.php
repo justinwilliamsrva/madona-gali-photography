@@ -124,6 +124,13 @@
 if (window.innerWidth > 1280) {
     var splide = new Splide('#image-carousel', {
         type: 'loop',
+        perPage: 4,
+        perMove: 1,
+
+    })
+} else if (window.innerWidth > 1024) {
+    var splide = new Splide('#image-carousel', {
+        type: 'loop',
         perPage: 3,
         perMove: 1,
 

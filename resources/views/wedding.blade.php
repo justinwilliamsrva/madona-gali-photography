@@ -245,7 +245,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
     <script>
 
+
 if (window.innerWidth > 1280) {
+    var splide = new Splide('#image-carousel', {
+        type: 'loop',
+        perPage: 4,
+        perMove: 1,
+
+    })
+} else if (window.innerWidth > 1024) {
     var splide = new Splide('#image-carousel', {
         type: 'loop',
         perPage: 3,
