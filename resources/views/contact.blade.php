@@ -6,7 +6,7 @@
     <div class="bg-[#EAF3F6]">
         <div class=" p-8 md:grid md:grid-cols-3 md:gap-6">
             <div class="md:col-span-1">
-                <h3 class="text-lg font-medium leading-6 text-gray-900">I look forward to getting to know you!</h3>
+                <h3 class="font-header text-3xl leading-6 text-gray-900">I look forward to getting to know you!</h3>
                 <p class="mt-1 text-sm text-gray-500">Click <a class="text-decoration-line: underline" href="{{ route('details.index') }}">here</a> for Details and Pricing.</p>
                 @if (session()->has('success'))
                 <p class="text-lg mt-5 rounded">{{session('success')}}</p>

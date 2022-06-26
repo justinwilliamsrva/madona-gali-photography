@@ -8,8 +8,7 @@
             <div class="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
             <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                 <div>
-                    <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">About Me</h2>
-                    <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Hey there, Glad you made it here!</h3>
+                    <h3 class="mt-2 tracking-wide text-center lg:text-left leading-8 font-header text-gray-900 text-4xl">Hey there, Glad you made it here!</h3>
                 </div>
             </div>
             <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -29,7 +28,7 @@
                         <p class="text-lg mb-5 text-gray-500">I am a documentary portrait and wedding photographer primarily serving the Richmond, Virginia area; however, I am always up for a collaboration or a fun destination venue. Specializing in weddings, engagements, senior, maternity, family portraits and real estate photography, I am delighted at the opportunity to work with you!</p>
                         <p class="text-lg mb-5 text-gray-500">Thank you for taking the time to get to know me, and I am thrilled to meet and work with you. Let's make some beautiful memories and preserve them forever in photos!</p>
                         <p class="text-lg mb-5 text-gray-500">Joyfully, </p>
-                        <p class="text-xl ml-12 text-gray-500">Madona</p>
+                        <p class="text-4xl ml-12 text-gray-500 font-header">Madona</p>
 
                     </div>
                 </div>

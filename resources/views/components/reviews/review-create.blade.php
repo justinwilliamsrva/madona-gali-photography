@@ -1,5 +1,5 @@
 <div class="bg-[#F8F4EE] pt-8 sm:pt-12 ">
-<h1 class="text-black text-center text-2xl md:text-4xl mb-6 font-header tracking-widest">Recent Reviews</h1>
+<h1 class="text-black text-center text-4xl mb-6 font-header tracking-widest">Recent Reviews</h1>
     <div class="">
         <div class="">
             @foreach($reviews as $review)

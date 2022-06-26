@@ -11,7 +11,7 @@
     </div>
     <hr />
     <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h1 class="text-black text-center text-2xl md:text-4xl mb-6 font-header tracking-widest">Gallery</h1>
+      <h1 class="text-black text-center text-4xl mb-6 font-header tracking-widest">Gallery</h1>
       <div class="grid grid-cols-1 gap-y-20 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
         <x-home-product-cards link="gallery-wedding" image="https://live.staticflickr.com/65535/52161698801_2e7dca9bfd_b.jpg" title="Wedding" />
         <x-home-product-cards link="gallery-couples" image="https://live.staticflickr.com/65535/52162186590_03fdcbc125_o.jpg" title="Couples" />
