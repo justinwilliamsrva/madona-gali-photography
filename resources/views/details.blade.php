@@ -3,7 +3,6 @@
         <x-banner-image backgroundImage="bg-[url('https://live.staticflickr.com/65535/52160678262_9ee6f2c8a0_o.jpg')]" headingTitle='Details' />
     </x-slot>
 
-
     <div class="min-h-[32rem] bg-[#EAF3F6]">
         <div class="relative p-4 mx-auto max-w-5xl sm:px-6 md:px-8" style="cursor: auto;">
             <div class="max-w-lg mx-auto my-5 overflow-hidden shadow-lg md:max-w-none md:flex">

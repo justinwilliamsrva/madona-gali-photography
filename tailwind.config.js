@@ -12,6 +12,9 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                'header': ['"Tangerine"', 'cursive'],
+                'normal': ['"Montserrat"', 'sans-serif']
+
             },
         },
     },

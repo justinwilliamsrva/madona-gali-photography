@@ -29,7 +29,6 @@
                             <input required type="text" name="last_name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
 
-
                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                             <label for="city" class="block text-sm font-medium text-gray-700">Email</label>
                             <input required type="text" name="email" id="city" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
@@ -45,7 +44,7 @@
                             <input required type="text" name="location" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
 
-                        <div class="col-span-6">
+                        <div class="col-span-6 border-t-2 pt-6">
                             <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
                             <input required type="text" name="subject" id="subject" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>

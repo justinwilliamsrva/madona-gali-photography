@@ -3,8 +3,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center">
             <div class="flex justify-between w-full sm:justify-center">
-                <a class="h-20 flex items-center" href="#">
-                    <h1 class='text-2xl'>Modana Gali Photography</h1>
+                <a class="h-20 flex items-center" href="{{route('home')}}">
+                    <h1 class='text-3xl md:text-4xl font-header tracking-widest'>Modana Gali Photography</h1>
                 </a>
                 <!-- Hamburger -->
                 <div class="-mr-2 flex items-center sm:hidden">
@@ -16,7 +16,7 @@
                     </button>
                 </div>
             </div>
-            <div class="hidden sm:flex nav-links h-10 mb-2">
+            <div class="hidden sm:flex nav-links h-10 mb-2 font-normal">
                 <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
                     {{ __('Home') }}
                 </x-nav-link>
