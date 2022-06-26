@@ -53,9 +53,9 @@
                             <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                             <textarea required type="text" rows="6" name="message" id="message" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
                         </div>
-                        <div class="col-span-6 sm:col-span-3">
+                        <div class="col-span-6">
                             <label for="security" class="block text-sm font-medium text-gray-700">Security Question:<br class="sm:hidden"/> Roses are red, violets are ____?</label>
-                            <input required type="text" name="security" id="security" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            <input required type="text" name="security" id="security" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block shadow-sm w-full sm:text-sm border-gray-300 rounded-md md:w-1/2">
                         </div>
                     </div>
                     <div class="py-3 text-left">

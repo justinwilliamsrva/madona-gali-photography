@@ -3858,6 +3858,12 @@ textarea.form-control.is-invalid {
 .w-3 {
   width: 0.75rem;
 }
+.w-1\/2 {
+  width: 50%;
+}
+.w-3\/4 {
+  width: 75%;
+}
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -4108,6 +4114,22 @@ textarea.form-control.is-invalid {
 .bg-red-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+.bg-\[\#C0FDFB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 253 251 / var(--tw-bg-opacity));
+}
+.bg-\[\#D4C9CF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 201 207 / var(--tw-bg-opacity));
+}
+.bg-\[\#66635B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 99 91 / var(--tw-bg-opacity));
+}
+.bg-\[\#8DB38B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(141 179 139 / var(--tw-bg-opacity));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -4567,6 +4589,10 @@ textarea.form-control.is-invalid {
   --tw-border-opacity: 1;
   border-color: rgb(165 180 252 / var(--tw-border-opacity));
 }
+.focus\:border-\[\#D4C9CF\]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 201 207 / var(--tw-border-opacity));
+}
 .focus\:bg-indigo-100:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(224 231 255 / var(--tw-bg-opacity));
@@ -4677,6 +4703,10 @@ textarea.form-control.is-invalid {
 
   .sm\:col-span-6 {
     grid-column: span 6 / span 6;
+  }
+
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
 
   .sm\:ml-0 {
@@ -4828,6 +4858,14 @@ textarea.form-control.is-invalid {
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:max-w-none {

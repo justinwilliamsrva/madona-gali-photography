@@ -15,13 +15,13 @@
                 <div>
                     <x-label for="name" :value="__('Full Name')" />
 
-                    <input id="name" class="block border-2 p-2 border-gray-300 mt-1 rounded w-full focus:border-[#EAF3F6]" type="name" name="name" required/>
+                    <input id="name" class="block border-2 p-2 border-gray-300 mt-1 rounded-md w-full focus:border-[#EAF3F6]" type="name" name="name" required/>
                 </div>
                 <!-- Rating -->
                 <div class="mt-4">
                     <x-label for="stars" :value="__('Rating')" />
 
-                    <select name="stars" class="rounded border-2 border-gray-300 focus:border-[#EAF3F6]" required>
+                    <select name="stars" class="rounded-md border-2 border-gray-300 focus:border-[#EAF3F6]" required>
                         <option value='5' >5</option>
                         <option value='4' >4</option>
                         <option value='3' >3</option>
@@ -34,12 +34,12 @@
                 <div class="mt-4">
                     <x-label for="message" :value="__('Message')" />
 
-                    <textarea id="message" class="block mt-1 w-full h-32 rounded border-2 border-gray-300 focus:border-[#EAF3F6]" type="textarea" name="message" value="old('message')" required></textarea>
+                    <textarea id="message" class="block mt-1 w-full h-32 rounded-md border-2 border-gray-300 focus:border-[#EAF3F6]" type="textarea" name="message" value="old('message')" required></textarea>
                 </div>
 
                 <div class="mt-4">
                     <x-label for="security" :value="__('Security Question: Pandas are white and _____?')" />
-                    <input id="security" class="block border-2 p-2 rounded border-gray-300 mt-1 w-full"
+                    <input id="security" class="block border-2 p-2 rounded-md border-gray-300 mt-1 w-full"
                                 type="security"
                                 name="security"
                                 required/>
@@ -50,10 +50,10 @@
                     {{ __('Submit') }}
                 </x-button>
                 @if (session()->has('success'))
-                    <p style="float:right" class="px-4 py-2 mt-3 text-xs rounded bg-[#EAF3F6]">{{session('success')}}</p>
+                    <p style="float:right" class="px-4 py-2 mt-3 text-xs rounded-md bg-[#EAF3F6]">{{session('success')}}</p>
                 @endif
                 @if (session()->has('error'))
-                    <p style="float:right" class="px-4 py-2 mt-3 text-xs rounded bg-red-300">{{session('error')}}</p>
+                    <p style="float:right" class="px-4 py-2 mt-3 text-xs rounded-md bg-red-300">{{session('error')}}</p>
                 @endif
             </form>
         </div>
