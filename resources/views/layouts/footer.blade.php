@@ -45,6 +45,6 @@
     </div>
     <p class="mt-8 text-center text-base text-gray-700">&copy; {{ date('Y') }} Copyright<br class="sm:hidden"/> Modana Gali Photography</p>
     <p class="text-center text-4xl text-gray-700">-</p>
-    <p class="text-center text-base text-gray-700">Designed By <a href="https://www.justinwdev.com" target="_blank">Justin Williams</a></p>
+    <p class="text-center text-base text-gray-700">Designed By <a href="https://www.justinwdev.com" class="underline hover:text-gray-900" target="_blank">Justin Williams</a></p>
   </div>
 </footer>
