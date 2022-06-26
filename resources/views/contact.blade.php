@@ -44,7 +44,7 @@
                             <input required type="text" name="location" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
 
-                        <div class="col-span-6 border-t-2 pt-6">
+                        <div class="col-span-6 border-t-2 pt-10">
                             <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
                             <input required type="text" name="subject" id="subject" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
@@ -53,12 +53,12 @@
                             <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                             <textarea required type="text" rows="6" name="message" id="message" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
                         </div>
-                        <div class="col-span-6">
+                        <div class="col-span-6 sm:col-span-3">
                             <label for="security" class="block text-sm font-medium text-gray-700">Security Question:<br class="sm:hidden"/> Roses are red, violets are ____?</label>
                             <input required type="text" name="security" id="security" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                         </div>
                     </div>
-                    <div class="pl-4 py-3 text-right sm:pl-6">
+                    <div class="py-3 text-left">
                         <button type="submit" class=" bg-gray-800 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white  hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Send</button>
                     </div>
 
