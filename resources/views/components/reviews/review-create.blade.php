@@ -6,9 +6,9 @@
                 <x-reviews.review-card :review='$review' />
             @endforeach
         </div>
-        <div class=" p-5 max-w-6xl mx-auto sm:flex-row md:flex flex-col justify-between">
-            <div class="flex-1 pr-7 hidden md:block"><img class="w-96 ml-auto" src="https://live.staticflickr.com/65535/52161700698_d2087a7b69_b.jpg" alt="madonna"></div>
-            <form class="flex-grow md:pl-7 md:mr-auto" method="POST" action="{{ route('reviews.store') }}">
+        <div class="p-4 lg:p-8 max-w-6xl lg:max-w-7xl mx-auto sm:flex-row md:flex flex-col justify-between">
+            <div class="flex-1 pr-7 hidden md:block"><img class="w-96" src="https://live.staticflickr.com/65535/52161700698_d2087a7b69_b.jpg" alt="madonna"></div>
+            <form class="flex-grow md:pl-7" method="POST" action="{{ route('reviews.store') }}">
                 @csrf
 
                 <!-- Name -->
