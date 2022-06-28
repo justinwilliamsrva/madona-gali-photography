@@ -43,7 +43,7 @@
 
         <!-- Page Heading -->
         <header>
-            {{ $header }}
+            {{ $header ?? '' }}
         </header>
 
         <!-- Page Content -->
