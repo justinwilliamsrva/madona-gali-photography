@@ -46,7 +46,7 @@ class ContactController extends Controller
         // $request->validate(["name" => 'required', "message" => ['required', 'min:7', 'max:500']]);
 
         if (strtolower($request->security) != 'blue'){
-            Session::flash('error', 'Message not sent - Failed security question');
+            Session::flash('error', 'Failed security question. <br class="md:hidden"/> Message not sent.');
 
             return redirect()->back();
         }
@@ -63,7 +63,7 @@ class ContactController extends Controller
             'security' => $request->security,
         ]);
         $contact->save();
-        Session::flash('success', 'Thank you for your message. I will get back to your shortly');
+        Session::flash('success', 'Thank you for your message.<br class="md:hidden"/> I will get back to your shortly');
         Mail::to('madonagaliphotography@gmail.com')->send(new ContactMailer($contact));
 
         return redirect()->back();

@@ -5,7 +5,6 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ReviewController;
 use App\Models\Review;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 

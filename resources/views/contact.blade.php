@@ -8,12 +8,7 @@
             <div class="md:col-span-1">
                 <h3 class="font-header text-3xl leading-6 text-gray-900">I look forward to getting to know you!</h3>
                 <p class="mt-1 text-sm text-gray-500">Click <a class="text-decoration-line: underline" href="{{ route('details.index') }}">here</a> for Details and Pricing.</p>
-                @if (session()->has('success'))
-                <p class="text-lg mt-5 rounded">{{session('success')}}</p>
-                @endif
-                @if (session()->has('error'))
-                <p class="text-lg mt-5 text-red-300 underline rounded">{{session('error')}}</p>
-                @endif
+
             </div>
             <div class="mt-5 md:mt-0 md:col-span-2">
                 <form action="{{ route('contact.store') }}" method="POST">

@@ -45,7 +45,7 @@ class ReviewController extends Controller
 
 
         if (strtolower($request->security) != 'black'){
-            Session::flash('error', 'Review not sent - Failed security question');
+            Session::flash('error', 'Review not sent <br> Failed security question');
 
             return redirect()->back();
         }

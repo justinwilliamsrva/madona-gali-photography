@@ -15,7 +15,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap" rel="stylesheet">
@@ -33,6 +33,13 @@
 <body class="font-normal antialiased">
     <div class="min-h-screen bg-gray-100">
         @include('layouts.navigation')
+        <div x-data="{show: true}" x-init="setTimeout(() => show = false, 5000)" x-show="show" class=" fixed flex justify-center mx-auto w-full">
+            @if (session()->has('success'))
+            <p class="text-lg mt-5 text-center py-3 px-5 bg-green-500/90 rounded min-w-3xl">{!! session('success') !!}</p>
+            @elseif (session()->has('error'))
+            <p class="text-lg mt-5 text-center py-3 px-5 bg-red-500/90 rounded min-w-3xl">{!! session('error') !!}</p>
+            @endif
+        </div>
 
         <!-- Page Heading -->
         <header>
@@ -41,22 +48,19 @@
 
         <!-- Page Content -->
         <main>
+
             {{ $slot }}
         </main>
         @include('layouts.footer')
     </div>
 </body>
 <script>
-
     $('#gallery').justifiedGallery({
-        rowHeight : 200,
-    lastRow : 'nojustify',
-    margins : 3
+        rowHeight: 200,
+        lastRow: 'nojustify',
+        margins: 3
 
     });
-
-
-
 </script>
 
 </html>
