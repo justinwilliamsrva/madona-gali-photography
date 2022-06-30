@@ -63,7 +63,7 @@ class ContactController extends Controller
             'security' => $request->security,
         ]);
         $contact->save();
-        Session::flash('success', 'Thank you for your message.<br class="md:hidden"/> I will get back to your shortly');
+        Session::flash('success', 'Thank you for your message.<br class="md:hidden"/> I will get back to your shortly.');
         Mail::to('madonagaliphotography@gmail.com')->send(new ContactMailer($contact));
 
         return redirect()->back();

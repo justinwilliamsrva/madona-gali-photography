@@ -63,9 +63,8 @@ use Illuminate\Support\Facades\URL;
 
     Route::get('/dashboard', function () {
 
-        $messages = Contact::latest()->get();
-        $reviews = Review::latest()->get();
-
+        $messages = Contact::latest()->paginate(3);
+        $reviews = Review::latest()->paginate(3);
 
         return view('dashboard', ['messages' => $messages, 'reviews' => $reviews]);
     })->middleware(['auth'])->name('dashboard');
