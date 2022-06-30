@@ -4,6 +4,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ReviewController;
+use App\Models\Contact;
 use App\Models\Review;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
@@ -61,7 +62,12 @@ use Illuminate\Support\Facades\URL;
     });
 
     Route::get('/dashboard', function () {
-        return view('dashboard');
+
+        $messages = Contact::latest()->get();
+        $reviews = Review::latest()->get();
+
+
+        return view('dashboard', ['messages' => $messages, 'reviews' => $reviews]);
     })->middleware(['auth'])->name('dashboard');
 
     require __DIR__ . '/auth.php';

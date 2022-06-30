@@ -22,7 +22,13 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
-
+            <div x-data="{show: true}" x-init="setTimeout(() => show = false, 5000)" x-show="show" class=" fixed flex justify-center mx-auto w-full">
+            @if (session()->has('success'))
+            <p class="text-lg mt-5 text-center py-3 px-5 bg-green-500/90 rounded min-w-3xl">{!! session('success') !!}</p>
+            @elseif (session()->has('error'))
+            <p class="text-lg mt-5 text-center py-3 px-5 bg-red-500/90 rounded min-w-3xl">{!! session('error') !!}</p>
+            @endif
+        </div>
             <!-- Page Heading -->
             <header class="bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
