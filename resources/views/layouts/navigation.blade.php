@@ -17,31 +17,31 @@
                 </div>
             </div>
             <div class="hidden sm:flex nav-links h-10 mb-2 font-normal">
-                <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="{{Auth::check() ? 'md:mx-1': ''}}">
+                <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="{{Auth::check() ? 'sm:mx-0 md:mx-1 lg:mx-4': ''}}">
                     {{ __('Home') }}
                 </x-nav-link>
-                <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="{{Auth::check() ? 'md:mx-1': ''}}">
+                <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="{{Auth::check() ? 'sm:mx-0 md:mx-1 lg:mx-4': ''}}">
                     {{ __('About') }}
                 </x-nav-link>
-                <x-nav-link :href="route('portrait')" :active="request()->routeIs('portrait')" class="{{Auth::check() ? 'md:mx-1': ''}}">
+                <x-nav-link :href="route('portrait')" :active="request()->routeIs('portrait')" class="{{Auth::check() ? 'sm:mx-0 md:mx-1 lg:mx-4': ''}}">
                     {{ __('Portraits') }}
                 </x-nav-link>
-                <x-nav-link :href="route('wedding')" :active="request()->routeIs('wedding')" class="{{Auth::check() ? 'md:mx-1': ''}}">
+                <x-nav-link :href="route('wedding')" :active="request()->routeIs('wedding')" class="{{Auth::check() ? 'sm:mx-0 md:mx-1 lg:mx-4': ''}}">
                     {{ __('Weddings') }}
                 </x-nav-link>
-                <x-nav-link :href="route('details.index')" :active="request()->routeIs('details.index')" class="{{Auth::check() ? 'md:mx-1': ''}}">
+                <x-nav-link :href="route('details.index')" :active="request()->routeIs('details.index')" class="{{Auth::check() ? 'sm:mx-0 md:mx-1 lg:mx-4': ''}}">
                     {{ __('Details') }}
                 </x-nav-link>
-                <x-nav-link :href="route('reviews')" :active="request()->routeIs('reviews')" class="{{Auth::check() ? 'md:mx-1': ''}}">
+                <x-nav-link :href="route('reviews')" :active="request()->routeIs('reviews')" class="{{Auth::check() ? 'sm:mx-0 md:mx-1 lg:mx-4': ''}}">
                     {{ __('Reviews') }}
                 </x-nav-link>
-                <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="{{Auth::check() ? 'md:mx-1': ''}}">
+                <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="{{Auth::check() ? 'sm:mx-0 md:mx-1 lg:mx-4': ''}}">
                     {{ __('Contact') }}
                 </x-nav-link>
                 @if(Auth::check())
                 <x-dropdown>
                     <x-slot name="trigger">
-                        <button class="flex items-center items-center px-2 mx-2 md:mx-1 border-b-2 border-transparent text-md font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                        <button class="flex items-center items-center px-2 mx-2 sm:mx-0 md:mx-1 lg:mx-4 border-b-2 border-transparent text-md font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ml-1">
