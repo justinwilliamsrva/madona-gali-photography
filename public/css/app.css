@@ -4755,6 +4755,10 @@ textarea.form-control.is-invalid {
     padding-top: 3rem;
   }
 
+  .sm\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
