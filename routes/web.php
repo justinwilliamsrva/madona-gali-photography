@@ -21,16 +21,25 @@ use Illuminate\Support\Facades\URL;
 |
 */
 
-
-
-
-
     Route::get('/', function () {
-        return view('home')->with('reviews', Review::where('stars', 5)->latest()->take(3)->get());
+        $images['banner'] = 'https://live.staticflickr.com/65535/52162186580_6f3ee285df_o.jpg';
+        $images['wedding'] = 'https://live.staticflickr.com/65535/52161698801_2e7dca9bfd_b.jpg';
+        $images['couples'] = 'https://live.staticflickr.com/65535/52162186590_03fdcbc125_o.jpg';
+        $images['seniors'] = 'https://live.staticflickr.com/65535/52161936529_a85fb13629_b.jpg';
+        $images['family'] = 'https://live.staticflickr.com/65535/52161936449_0d388a3662_o.jpg';
+        $images['maternity'] = 'https://live.staticflickr.com/65535/52161936474_dbc6225ffe_b.jpg';
+        $images['real-estate'] = 'https://live.staticflickr.com/65535/52161698791_41a86c9fa6_b.jpg';
+
+        return view('home')->with(['reviews' => Review::where('stars', 5)->latest()->take(3)->get(), 'images' => $images,]);
     })->name('home');
 
     Route::get('about', function () {
-        return view('about');
+        $images['body'] = 'https://live.staticflickr.com/65535/52160678462_9d650c2a55_b.jpg' ;
+        $images['banner']= 'https://live.staticflickr.com/65535/52176633309_b5e97184db_b.jpg';
+        $images['banner-md']= 'https://live.staticflickr.com/65535/52178289849_72220d3773_b.jpg';
+        $images['banner-lg']= 'https://live.staticflickr.com/65535/52162188140_e6c9f5ff44_b.jpg';
+
+        return view('about')->with('images', $images);
     })->name('about');
 
     Route::get('portrait', function () {

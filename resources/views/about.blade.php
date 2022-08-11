@@ -1,6 +1,6 @@
 <x-guest-layout>
     <x-slot name="header">
-        <x-banner-image backgroundImage="bg-[url('https://live.staticflickr.com/65535/52176633309_b5e97184db_b.jpg')] md:bg-[url('https://live.staticflickr.com/65535/52178289849_72220d3773_b.jpg')] lg:bg-[url('https://live.staticflickr.com/65535/52162188140_e6c9f5ff44_b.jpg')]" headingTitle='MADONA GALI' />
+        <x-banner-image backgroundImage="bg-[url('{{$images['banner']}}')] md:bg-[url('{{$images['banner-md']}}')] lg:bg-[url('{{$images['banner-lg']}}')]" headingTitle='MADONA GALI' />
     </x-slot>
 
     <div class="bg-[#EAF3F6] overflow-hidden">
@@ -16,7 +16,7 @@
                     <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
                         <figure>
                             <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
-                                <img class="rounded-lg shadow-lg object-cover object-center" src="https://live.staticflickr.com/65535/52160678462_9d650c2a55_b.jpg" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
+                                <img class="rounded-lg shadow-lg object-cover object-center" src="{{$images['body']}}" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
                             </div>
                         </figure>
                     </div>
