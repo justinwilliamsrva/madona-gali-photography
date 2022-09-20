@@ -20,10 +20,10 @@
                     <p class="text-center">{{$message->phone}}</p>
                     <p class="text-center">{{$message->location}}</p>
                     <p class="col-span-2 sm:col-span-4 text-center">{{$message->subject}}</p>
-                    <p class="col-span-2 sm:col-span-4 md:col-span-4">{{$message->message}}<br>{{$message->created_at}}</p>
+                    <p class="col-span-2 sm:col-span-4 md:col-span-4">{{$message->message}}<br>{{ Carbon\Carbon::parse($message->created_at)->format('F d, Y - h:i a') }}</p>
                 </div>
             @endforeach
-            <div>{{$messages->links()}}</div>
+            <div>{{$messages->appends(['reviews' => $reviews->currentPage()])->links()}} </div>
             </div>
 
         </div>
@@ -38,7 +38,7 @@
             @foreach($reviews as $review)
                 <x-reviews.review-card-full :review='$review' />
             @endforeach
-            <div>{{$reviews->links()}}</div>
+            <div>{{$reviews->appends(['messages' => $messages->currentPage()])->links()}}</div>
             </div>
 
         </div>

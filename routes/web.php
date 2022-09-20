@@ -35,7 +35,7 @@ use Illuminate\Support\Facades\URL;
 
     Route::get('about', function () {
         $images['body'] = 'https://live.staticflickr.com/65535/52160678462_9d650c2a55_b.jpg' ;
-        $images['banner']= 'https://live.staticflickr.com/65535/52176633309_b5e97184db_b.jpg';
+        $images['banner']= 'https://live.staticflickr.com/65535/52160678462_9d650c2a55_b.jpg';
         $images['banner-md']= 'https://live.staticflickr.com/65535/52178289849_72220d3773_b.jpg';
         $images['banner-lg']= 'https://live.staticflickr.com/65535/52162188140_e6c9f5ff44_b.jpg';
 
@@ -72,8 +72,8 @@ use Illuminate\Support\Facades\URL;
 
     Route::get('/dashboard', function () {
 
-        $messages = Contact::latest()->paginate(3);
-        $reviews = Review::latest()->paginate(3);
+        $messages = Contact::latest()->paginate(3, ['*'], 'messages');
+        $reviews = Review::latest()->paginate(3, ['*'], 'reviews');
 
         return view('dashboard', ['messages' => $messages, 'reviews' => $reviews]);
     })->middleware(['auth'])->name('dashboard');
