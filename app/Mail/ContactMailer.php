@@ -31,6 +31,6 @@ class ContactMailer extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contact')->with('data', $this->data);
+        return $this->from($this->data['email'])->markdown('emails.contact')->with('data', $this->data);
     }
 }
