@@ -7,6 +7,10 @@
       </div>
 
       <div class="px-5 py-2">
+        <a href="/#galleries" class="text-base text-gray-700 hover:text-gray-900"> Galleries </a>
+      </div>
+
+      <div class="px-5 py-2">
         <a href="/about" class="text-base text-gray-700 hover:text-gray-900"> About </a>
       </div>
 
