@@ -1,6 +1,6 @@
 <x-guest-layout>
     <x-slot name="header">
-        <x-banner-text title='WEDDINGS' text='Photography for the classic romantic who loves planning all of the little details, and believes that marrying her best friend is the most important aspect of the day. Whether day or night - rain or shine, I look forward to making your special something you will cherish forever!' />
+        <x-banner-text title='WEDDINGS' text='Photography for the classic romantic who loves planning all of the little details, and believes that marrying her best friend is the most important aspect of the day. Whether day or night - rain or shine, I look forward to making your special day something you will cherish forever!' />
     </x-slot>
 
     <section id="image-carousel" class="splide" aria-label="Beautiful Images">
